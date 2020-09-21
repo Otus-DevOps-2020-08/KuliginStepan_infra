@@ -19,3 +19,8 @@ Host someinternalhost
    IdentityFile ~/.ssh/appuser
    ProxyCommand ssh -W %h:%p -i ~/.ssh/appuser appuser@130.193.49.130
 ```
+
+---
+
+testapp_IP = 84.201.158.12
+testapp_port = 9292
