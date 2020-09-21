@@ -11,6 +11,7 @@ sudo apt-get install -y mongodb-org
 sudo systemctl start mongod
 sudo systemctl enable mongod
 
+
 cd /home/ubuntu || exit
 sudo apt install -y git
 git clone -b monolith https://github.com/express42/reddit.git
