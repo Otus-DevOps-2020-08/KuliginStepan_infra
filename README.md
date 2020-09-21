@@ -19,3 +19,20 @@ Host someinternalhost
    IdentityFile ~/.ssh/appuser
    ProxyCommand ssh -W %h:%p -i ~/.ssh/appuser appuser@130.193.49.130
 ```
+
+---
+
+testapp_IP = 84.201.158.12
+testapp_port = 9292
+
+Команда для создания ВМ с приложением:
+```
+yc compute instance create \
+  --name reddit-app \
+  --hostname reddit-app \
+  --memory=4 \
+  --create-boot-disk image-folder-id=standard-images,image-family=ubuntu-1604-lts,size=10GB \
+  --network-interface subnet-name=default-ru-central1-a,nat-ip-version=ipv4 \
+  --metadata serial-port-enable=1,ssh-keys='...' \
+  --metadata-from-file user-data=cloud_config.sh
+```
