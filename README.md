@@ -26,7 +26,6 @@ testapp_IP = 84.201.158.12
 testapp_port = 9292
 
 Команда для создания ВМ с приложением:
-
 ```
 yc compute instance create \
   --name reddit-app \
