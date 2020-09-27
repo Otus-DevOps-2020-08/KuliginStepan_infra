@@ -36,3 +36,10 @@ yc compute instance create \
   --metadata serial-port-enable=1,ssh-keys='...' \
   --metadata-from-file user-data=cloud_config.sh
 ```
+
+---
+
+Создал образы reddit-base и reddit full, добавил скрипт автоматизации создания ВМ
+
+`packer build -var-file=variables.json ./ubuntu16.json`
+`packer build -var-file=variables.json ./immutable.json`
