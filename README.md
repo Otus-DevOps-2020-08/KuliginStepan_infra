@@ -43,3 +43,8 @@ yc compute instance create \
 
 `packer build -var-file=variables.json ./ubuntu16.json`
 `packer build -var-file=variables.json ./immutable.json`
+
+---
+Создал ВМ с помощью terraform, добавил load balancer
+
+Проблема при создании нескольких ВМ с помощьюю копирования кода в том, что такой подход не масштабируется.
