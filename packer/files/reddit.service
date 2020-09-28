@@ -1,0 +1,9 @@
+[Unit]
+ Description=Reddit
+ After=network.target
+ [Service]
+ Type=simple
+ WorkingDirectory=/home/ubuntu/reddit
+ ExecStart=/home/ubuntu/reddit/sbin/puma
+ [Install]
+ WantedBy=multi-user.target
