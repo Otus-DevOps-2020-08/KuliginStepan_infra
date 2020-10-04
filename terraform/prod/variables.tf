@@ -31,3 +31,21 @@ variable app_count {
   description = "App count"
   default     = 1
 }
+
+variable app_disk_image {
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
+}
+
+variable db_disk_image {
+  description = "Disk image for reddit db"
+  default     = "reddit-db-base"
+}
+
+variable s3_access_key {
+  description = "S3 Access key"
+}
+
+variable s3_secret_key {
+  description = "S3 secret key"
+}

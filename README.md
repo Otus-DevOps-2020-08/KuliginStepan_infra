@@ -48,3 +48,6 @@ yc compute instance create \
 Создал ВМ с помощью terraform, добавил load balancer
 
 Проблема при создании нескольких ВМ с помощьюю копирования кода в том, что такой подход не масштабируется.
+
+---
+Добавил terraform модули для приложения и базы данных, добавил remote backend на базе Yandex Object Storage.
