@@ -51,3 +51,7 @@ yc compute instance create \
 
 ---
 Добавил terraform модули для приложения и базы данных, добавил remote backend на базе Yandex Object Storage.
+
+---
+Добавил плейбуки для настройки базы данных, приложения и деплоя.
+Заменил скрипты на плейбуки для provisioning packer образов.
