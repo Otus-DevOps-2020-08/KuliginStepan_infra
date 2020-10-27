@@ -1,0 +1,12 @@
+---
+- name: Provision app
+  hosts: all
+  become: true
+  tasks:
+    - name: Install packages
+      apt:
+        name:
+          - ruby-full
+          - ruby-bundler
+          - build-essential
+        update_cache: true
