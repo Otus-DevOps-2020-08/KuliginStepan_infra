@@ -58,3 +58,8 @@ yc compute instance create \
 
 ---
 Добавил поддержку окружений в плейбуки ansible, добавил nginx, добавил ansible vault
+
+---
+1. Провиженинг ролей ansible с помощью Vagrant
+2. Тестирование роли ansible db с помощью molecule и testinfra
+3. Использование ролей ansible при сборке packer образов
